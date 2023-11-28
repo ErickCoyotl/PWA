@@ -16,7 +16,25 @@ self.addEventListener('install', event => {
           './img/Home.png',
           './img/html.png',
           './img/script.png',
-          './img/splash.png'
+          './img/splash.png',
+          './img/Cliente/cliente1.png',
+          './img/Cliente/cliente2.png',
+          './img/Cliente/cliente3.png',
+          './img/Cliente/cliente4.png',
+          './img/Cliente/cliente5.png',
+          './img/Servidor/servidor1.png',
+          './img/Servidor/servidor2.png',
+          './img/Servidor/servidor3.png',
+          './img/Servidor/servidor4.png',
+          './img/Servidor/servidor5.png',
+          './img/Servidor/servidor6.png',
+          './img/Servidor/servidor7.png',
+          './img/getpost.png',
+          './img/main.png',
+          './img/manifest.png',
+          './img/Mysql.png',
+          './img/post.png',
+          './img/sw.png'
         ]);
       })
     );
