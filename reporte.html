@@ -1,0 +1,381 @@
+<div>
+    <h1 class="center">Proceso de pruebas</h1>
+    <p>
+        Para el proceso de pruebas se designaron ciertas tareas a cada integrante del equipo.<br>
+        Las pruebas que se realizaron son las siguientes:
+    </p>
+    <table class="table table-striped">
+        <tbody>
+          <tr>
+            <th scope="row">Objetivo de la Prueba</th>
+            <td>Verificar que el inicio de sesión en la aplicación web funcione correctamente, permitiendo solo a usuarios con correo institucional, aplicando validación de contraseña y sin mostrar errores.</td>
+          </tr>
+          <tr>
+            <th scope="row">Responsable</th>
+            <td>Josue Erick Coyotl Rojas</td>
+          </tr>
+          <tr>
+            <th scope="row">Pasos</th>
+            <td>
+                1.	Ambiente de la prueba: 
+                <ul>
+                    <li>
+                        Entorno de pruebas: Servidor de desarrollo.
+                    </li>
+                    <li>
+                        Navegador utilizado: Google Chrome versión 95.0.4638.54.
+                    </li>
+                    <li>
+                        Usuario de prueba: Usuario de correo institucional válido.
+                    </li>
+                    <li>
+                        Base de datos de prueba con datos de prueba disponibles.
+                    </li>
+                </ul>
+                2.	Particionar el sistema en módulos de unidades lógicas fáciles de probar:
+                <ul>
+                    <li>
+                        Módulo de inicio de sesión. 
+                    </li>
+                    <li>
+                        Módulo de gestión de usuarios.
+                    </li>
+                    <li>
+                        Módulo de validación de contraseñas.
+                    </li>
+                </ul>
+                3.	Aspectos a considerar:
+                <ul>
+                    <li>
+                        Rutinas de excepción:<br>
+                        Se verificó que el sistema maneja excepciones de manera adecuada en caso de fallos inesperados.
+                    </li>
+                    <li>
+                        Rutinas de error:<br>
+                        Se intentó el inicio de sesión con credenciales inválidas para asegurarse de que se maneje correctamente el error de autenticación.
+                    </li>
+                    <li>
+                        Manejo de parámetros:<br>
+                        Se verificó que los parámetros de inicio de sesión se envían y reciben correctamente.
+                    </li>
+                    <li>
+                        Validaciones:<br>
+                        Se introdujeron datos de entrada válidos y no válidos para verificar que se aplican las validaciones adecuadas.
+                        Se confirmó que el sistema impide el inicio de sesión con correos no institucionales.
+                    </li>
+                    <li>
+                        Valores válidos:<br>
+                        Se inició sesión con credenciales válidas para asegurarse de que el proceso funcione sin problemas.
+                    </li>
+                    <li>
+                        Valores límites:<br>
+                        Se probaron contraseñas con la longitud mínima y máxima permitida para verificar que no haya problemas en los extremos.
+                    </li>
+                    <li>
+                        Mensajes posibles:<br>
+                        Se verificó que los mensajes de inicio de sesión, errores y validación sean coherentes y fáciles de entender.
+                        Se confirmó que los mensajes de error proporcionan información útil para la resolución de problemas.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Técnica</th>
+            <td>El inicio de sesión en la aplicación web ha sido probado y cumple con los requisitos establecidos, excepto por la validación de caracteres máximos y mínimos en la contraseña.</td>
+          </tr>
+          <tr>
+            <th scope="row">Objetivo de la Prueba</th>
+            <td>Verificar que la función de realizar publicaciones en el foro funcione correctamente, mostrando la publicación en el feed con el nombre de usuario, fecha/hora y permitiendo la visualización de imágenes adjuntas.</td>
+          </tr>
+          <tr>
+            <th scope="row">Responsable</th>
+            <td>Edward Sánchez Gil</td>
+          </tr>
+          <tr>
+            <th scope="row">Pasos</th>
+            <td>
+                1.	Ambiente de la Prueba:
+                <ul>
+                    <li>
+                        Navegador a utilizar<br>
+                        Usuario de prueba: Usuario registrado válido.<br>
+                        Se ha preparado un conjunto de datos de prueba que incluye usuarios y publicaciones ficticias.
+                    </li>
+                </ul>
+                2.	Particionar el sistema en módulos de unidades lógicas fáciles de probar:
+                <ul>
+                    <li>
+                        Módulo de publicación en el foro.<br>
+                        Módulo de visualización del feed.<br>
+                        Módulo de carga de imágenes.
+                    </li>
+                </ul>
+                3.	Aspectos a Considerar:
+                <ul>
+                    <li>
+                        Creación de una publicación:<br>
+                        Se creó una nueva publicación en el foro utilizando un usuario de prueba.<br>
+                        Se verificó que se pueden incluir texto e imágenes.
+                    </li>
+                    <li>
+                        Visualización de la publicación:<br>
+                        Se confirmó que la publicación creada se muestra correctamente en el feed.<br>
+                        Se verificó que el nombre de usuario que publico corresponda al de la publicación.<br>
+                        Se comprobó que la fecha y hora de la publicación sean correctas y actualizadas automáticamente.
+                    </li>
+                    <li>
+                        Visualización de imágenes:<br>
+                        Se adjuntó una imagen a la publicación y se verificó que se muestra correctamente en el feed.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Técnica</th>
+            <td>
+                <ul>
+                    <li>
+                        La función de realizar publicaciones en el foro funciona según lo esperado al igual que se muestran en el feed con el nombre del usuario y la fecha/hora correctos, también las imágenes adjuntas se visualizan correctamente en las publicaciones.
+                    </li>
+                    <li>
+                        En ocasiones al realizar una publicación se muestra como si la publicación hubiera sido realizada hace 23 horas, pero esta se corrige en cuanto se realiza una nueva publicación.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Objetivo de la Prueba</th>
+            <td>Verificar que los usuarios tengan la capacidad de eliminar sus propias publicaciones y comentarios, pero no los de otros usuarios.</td>
+          </tr>
+          <tr>
+            <th scope="row">Responsable</th>
+            <td>Héctor Lemus Martínez</td>
+          </tr>
+          <tr>
+            <th scope="row">Pasos</th>
+            <td>
+                1.	Ambiente a utilizar.
+                2.	Entorno de desarrollo o prueba del foro.
+                3.	Particionar el sistema en unidades lógicas fáciles de probar:
+                <ul>
+                    <li>
+                        Módulo de publicación en el foro.
+                    </li>
+                    <li>
+                        Módulo de visualización del feed.
+                    </li>
+                </ul>
+                4.	Aspectos a considerar:
+                <ul>
+                    <li>
+                        Asegurarse de que el sistema permita eliminar las propias publicaciones y comentarios, pero no las de otros usuarios.
+                    </li>
+                    <li>
+                        Iniciar sesión como un usuario registrado.
+                    </li>
+                    <li>
+                        Realizar una publicación y un comentario en el foro.
+                    </li>
+                    <li>
+                        Intentar eliminar la propia publicación y comentario.
+                    </li>
+                    <li>
+                        Verificar que se pueda eliminar con éxito.
+                    </li>
+                    <li>
+                        Intentar eliminar la publicación o comentario de otro usuario.
+                    </li>
+                    <li>
+                        Verificar que no se permita eliminarlo.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Técnica</th>
+            <td>La función de eliminar publicaciones y/o comentarios en el foro funciona según lo esperado.</td>
+          </tr>
+          <tr>
+            <th scope="row">Objetivo de la Prueba</th>
+            <td>Confirmar que solo los administradores tengan la capacidad de eliminar publicaciones o comentarios que infrinjan las reglas del foro.</td>
+          </tr>
+          <tr>
+            <th scope="row">Responsable</th>
+            <td>Montserrat Villa Pérez</td>
+          </tr>
+          <tr>
+            <th scope="row">Pasos</th>
+            <td>
+                1.	Ambiente a utilizar:
+                <ul>
+                    <li>
+                        Entorno de desarrollo o prueba del foro.
+                    </li>
+                </ul>
+                2.	Particionar el sistema en unidades lógicas fáciles de probar:
+                <ul>
+                    <li>
+                        Módulo de publicación en el foro.
+                    </li>
+                    <li>
+                        Módulo de visualización del feed.
+                    </li>
+                </ul>
+                3.	Aspectos a considerar:
+                <ul>
+                    <li>
+                        Asegurarse de que solo los administradores tengan permiso para eliminar publicaciones o comentarios inapropiados.
+                    </li>
+                    <li>
+                        Iniciar sesión como administrador.
+                    </li>
+                    <li>
+                        Identificar una publicación o comentario fuera de lugar.
+                    </li>
+                    <li>
+                        Intentar eliminar la publicación o comentario.
+                    </li>
+                    <li>
+                        Verificar que se pueda eliminar con éxito.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Técnica</th>
+            <td>
+                <ul>
+                    <li>
+                        La función de eliminar publicaciones y/o comentarios para los administradores en el foro funciona según lo esperado.
+                    </li>
+                    <li>
+                        Por el momento las publicaciones/comentarios  solo pueden eliminarse desde la sección de reportes.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Objetivo de la Prueba</th>
+            <td>Confirmar que los usuarios puedan comentar las publicaciones existentes y responder a los comentarios de otros usuarios.</td>
+          </tr>
+          <tr>
+            <th scope="row">Responsable</th>
+            <td>Edward Sánchez Gil</td>
+          </tr>
+          <tr>
+            <th scope="row">Pasos</th>
+            <td>
+                1.	Ambiente a utilizar:
+                <ul>
+                    <li>
+                        Entorno de desarrollo o prueba del foro.
+                    </li>
+                </ul>
+                2.	Particionar el sistema en unidades lógicas fáciles de probar:
+                <ul>
+                    <li>
+                        Módulo de publicación en el foro.
+                    </li>
+                    <li>
+                        Módulo de visualización del feed.
+                    </li>
+                </ul>
+                3.	Aspectos a considerar:
+                <ul>
+                    <li>
+                        Asegurarse de que los usuarios puedan interactuar comentando publicaciones y respondiendo a otros comentarios.
+                    </li>
+                    <li>
+                        Iniciar sesión como un usuario registrado.
+                    </li>
+                    <li>
+                        Acceder a una publicación en el foro.
+                    </li>
+                    <li>
+                        Agregar un comentario a la publicación.
+                    </li>
+                    <li>
+                        Verificar que el comentario se publique correctamente.
+                    </li>
+                    <li>
+                        Responder a un comentario existente.
+                    </li>
+                    <li>
+                        Verificar que la respuesta se agregue con éxito.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Técnica</th>
+            <td>La función de comentar funciona según lo esperado.</td>
+          </tr>
+          <tr>
+            <th scope="row">Objetivo de la Prueba</th>
+            <td>Garantizar que el acceso al foro y sus funciones esté restringido a usuarios que no hayan iniciado sesión.</td>
+          </tr>
+          <tr>
+            <th scope="row">Responsable</th>
+            <td>Josue Erick Coyotl Rojas</td>
+          </tr>
+          <tr>
+            <th scope="row">Pasos</th>
+            <td>
+                1.	Ambiente a utilizar:
+                <ul>
+                    <li>
+                        Entorno de desarrollo o prueba del foro.
+                    </li>
+                </ul>
+                2.	Particionar el sistema en unidades lógicas fáciles de probar:
+                <ul>
+                    <li>
+                        Módulo de inicio de sesión.
+                    </li>
+                    <li>
+                        Módulo de visualización del feed.
+                    </li>
+                </ul>
+                3.	Aspectos a considerar:
+                <ul>
+                    <li>
+                        Asegurarse de que los usuarios puedan interactuar comentando publicaciones y respondiendo a otros comentarios.
+                    </li>
+                    <li>
+                        Acceder a la página principal del foro sin iniciar sesión.
+                    </li>
+                    <li>
+                        Intentar realizar acciones como publicar, comentar o eliminar.
+                    </li>
+                    <li>
+                        Verificar que se impida realizar estas acciones y se solicite iniciar sesión.
+                    </li>
+                    <li>
+                        Iniciar sesión como usuario registrado.
+                    </li>
+                    <li>
+                        Intentar realizar las mismas acciones.
+                    </li>
+                    <li>
+                        Verificar que se permita realizar las acciones correctamente.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Técnica</th>
+            <td>
+                <ul>
+                    <li>
+                        La restricción funciona correctamente en su mayoría.
+                    </li>
+                    <li>
+                        A algunas personas les aparecerá la opción de reportar publicaciones aun sin haber iniciados sesión, pero en caso de intentar realizar esta acción el reporte no se realizara.
+                    </li>
+                </ul>
+            </td>
+          </tr>
+
+        </tbody>
+    </table>
+</div>

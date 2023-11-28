@@ -1,0 +1,93 @@
+<div>
+    <h1 class="center">Plataformas y herramientas utilizadas.</h1>
+    <h5>Justificación de las plataformas y herramientas utilizadas:</h5>
+    <p>
+        Para el desarrollo la aplicación se decidió utilizar el lenguaje de programación Python con el framework de desarrollo Flask, esto se debe a que encontramos en este una serie de características y beneficios que creemos que se adaptan a los requerimientos del proyecto.<BR></BR>
+
+        Flexibilidad y rendimiento: Flask es un framework web ligero y flexible, diseñado principalmente para construir aplicaciones web pequeñas y medianas, una de las características que lo destaca sobre otros frameworks de Python es su eficiencia y velocidad, ya que se ejecuta rápidamente al utilizar solo los componentes esenciales necesarios para construir una aplicación web.<BR></BR>
+
+        Escalabilidad y compatibilidad: Flask ofrece una base sólida para el crecimiento de la aplicación ya que permite organizar el código en módulos y extensiones, lo que facilita la gestión y la escalabilidad a medida que el proyecto crece y requiere más funcionalidades, al mismo tiempo, Flask también es compatible con el uso de servicios y herramientas externas para manejar aspectos como el almacenamiento en caché y la gestión de bases de datos.<BR></BR>
+
+        Seguridad: Flask proporciona características básicas de seguridad como soporte para protección contra ataques CSRF (Cross-Site Request Forgery) y XSS (Cross- Site Scripting) que facilitan la implementación de mecanismos de seguridad contra ciertas vulnerabilidades en una aplicación.
+    </p>
+
+    <h5>Justificación de Git y Git-Hub:</h5>
+    <p>
+        Estamos utilizando Git y GitHub en el desarrollo de nuestro proyecto del foro universitario "Castor Senpai" ya que tiene bastantes ventajas como la colaboración y gestión del proyecto.
+    </p>
+    <h6>Control de Versiones(Git):</h6>
+    <p>
+        Git es un sistema de control de versiones distribuido ampliamente utilizado. Permite realizar un seguimiento preciso de los cambios en el código fuente a lo largo del tiempo. Cada modificación es registrada, lo que facilita la identificación y resolución de problemas, así como la reversión a versiones anteriores si es necesario.
+    </p>
+    <h6>Colaboración y Gestión de Código (GitHub):</h6>
+    <p>
+        GitHub proporciona una plataforma centralizada para el alojamiento de repositorios Git, lo que facilita la colaboración entre desarrolladores. Permite a varios miembros del equipo trabajar simultáneamente en el código, fusionar cambios de manera eficiente y gestionar problemas y solicitudes de extracción de manera estructurada.
+    </p>
+    <h6>Revisión de Código:</h6>
+    <p>
+        GitHub facilita la revisión de código a través de solicitudes de extracción. Los cambios propuestos pueden ser revisados, comentados y discutidos antes de su fusión en la rama principal del código. Esto asegura la calidad del código y proporciona un mecanismo transparente para la aprobación de nuevas características o correcciones.
+    </p>
+
+    <h5>Justificación de mysql:</h5>
+    <p>
+        Se decidio usar MySQL como sistema de gestion de nuestra base de datos ya que es capaz de manejar grandes conjuntos de datos, por lo que es importante para un sistema universitario que puede acumular una cantidad significativa de información a medida que se utilizan y generan datos a lo largo del cuatrimestre ademas proporciona opciones de escabilidad para crecer con las necesidades del proyecto en caso de que se decida hacer actualizaciones para evolucionar el software. Puede ser configurado para manejar un mayor número de transacciones y usuarios a medida que el proyecto Castor Senpai evoluciona y aumenta su base de usuarios.<BR></BR>
+        También MySQL es compatible con un amplio conjunto de herramientas y lenguajes de programación. Esto permite una fácil integración con otras tecnologías y facilita el desarrollo de aplicaciones en un entorno diverso y ofrece funciones avanzadas de seguridad, como la gestión de usuarios y privilegios, encriptación de datos. Estas características son esenciales para proteger la confidencialidad y la integridad de los datos sensibles de los estudiantes y profesores.
+    </p>
+
+    <h5>Justificación de bibliotecas:</h5>
+    <p>
+        bcrypt: Se utilizo esta biblioteca de python para poder realizar la encriptación de las contraseñas ya que es una biblioteca de Python que se utiliza para el cifrado seguro de contraseñas. Funciona mediante la aplicación de un algoritmo de hash lento y deliberadamente costoso, diseñado específicamente para ser resistente a ataques de fuerza bruta.<BR></BR>
+        Pillow: Pillow es una biblioteca de procesamiento de imágenes en Python que se utiliza para trabajar con imágenes en diferentes formatos. Permite abrir, manipular, y guardar imágenes. Utilizamos esta biblioteca para limitar a los usuarios a usar solo imagenes dentro de sus publicaciones.<BR></BR>
+        mysql-connector-python: Usamos esta biblioteca para la conexión de nuestra base de datos con el proyecto "Castor Sempai" ya que es un conector oficial de MySQL para Python que facilita la interacción con bases de datos MySQL desde aplicaciones Python. Permite realizar operaciones como la ejecución de consultas SQL, inserción y actualización de datos en la base de datos MySQL.
+    </p>
+
+    <h5>
+        Parametros de Configuración:
+    </h5>
+    <ul>
+        <li>
+            Instalación de MySQL:<br>
+            Primero, se debe instalar el servidor de MySQL en el servidor. Esto varía según el sistema operativo.<br>
+            sudo apt-get install mysql-server
+        </li>
+        <li>
+            Instalación de Python:<br>
+            La mayoría de los servidores Unix ya tienen Python instalado. Asegúrarse de que Python esté instalado y disponible. Se puede verificar la versión con el siguiente comando:<br>
+            python –versión
+        </li>
+        <li>
+            Instalación de MySQL Python Connector: <br>
+            El conector MySQL para Python se puede instalar mediante pip, que es el administrador de paquetes de Python.  Ejecutar el siguiente comando para instalarlo:<br>
+            pip install mysql-connector-python
+        </li>
+        <li>
+            Instalación de Flask:<br> 
+            Flask es un marco de desarrollo web para Python. Puede instalarse también con pip:<br>
+            pip install Flask
+        </li>
+        <li>
+            Instalación de Bcrypt: <br>
+            Bcrypt es una biblioteca de Python que se utiliza para el hashing seguro de contraseñas. Instálarlo con pip.<br>
+            pip install bcrypt
+        </li>
+        <li>
+            Instalación de Pillow: <br>
+            Pillow es una biblioteca de código abierto que es una bifurcación (fork) de la biblioteca Python Imaging Library (PIL) y ofrece una amplia gama de funcionalidades para trabajar con imágenes.<br>
+            pip install Pillow
+        </li>
+    </ul>
+    <p>
+        <h5>Configuración de la Aplicación:</h5>
+        En el servidor, coloca los archivos de la aplicación Flask (código Python, plantillas HTML, archivos estáticos, etc.) en un directorio adecuado.<BR></BR>
+
+        <h5>Configuración de la Base de Datos:</h5>
+        Crear una base de datos en MySQL y configurar las credenciales de acceso en la aplicación Flask. Esto generalmente se hace en el código Python de la aplicación.
+        En caso de requerir un cambio de estas debe realizarse la nueva configuración en el archivo data_acess.py.<br>
+        Esto se puede configurar en la línea 6 a la línea 8.<BR></BR>
+
+        <h5>Configuración del Servidor Web:</h5>
+        Se puede usar un servidor web como Apache o Nginx para servir la aplicación Flask.<br>
+        Configurar el servidor web para redirigir las solicitudes a la aplicación Flask. <br>
+        Consultar la documentación del servidor web específico para obtener instrucciones detalladas.
+    </p>
+</div>

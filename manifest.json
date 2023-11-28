@@ -1,0 +1,17 @@
+{
+    "name": "Documentación PWA",
+    "short_name": "PWA",
+    "description": "Aplicación web progresiva para la documentación del producto 3 de la materia Aplicaciones web progresivas",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "./img/IsotipoBlanco.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
