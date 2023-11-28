@@ -2,7 +2,7 @@
     "name": "Documentación PWA",
     "short_name": "PWA",
     "description": "Aplicación web progresiva para la documentación del producto 3 de la materia Aplicaciones web progresivas",
-    "start_url": "/",
+    "start_url": "/PWA/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
