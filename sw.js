@@ -2,7 +2,7 @@ self.addEventListener('install', event => {
     event.waitUntil(
       caches.open('mi-cache').then(cache => {
         return cache.addAll([
-          '/',
+          '/'
         ]);
       })
     );
