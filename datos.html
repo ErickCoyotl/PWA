@@ -9,22 +9,22 @@
         En la aplicación castor senpai se implementan datos remotos porque están almacenados en una base de datos Mysql en el servidor, para acceder a ellos se tiene que hacer una solicitud al servidor controlado por flask y desarrollado en Python para que este haga las consultas y procese los datos para regresarlos en un formato JSON al cliente y de esta forma poder mostrarlos al usuario.
     </p>
     <div class="center">
-        <img src="/img/post.png" class="img">
+        <img src="./img/post.png" class="img">
         <p class="center">
             Ejemplo de solicitud de datos al servidor.
         </p>
         <BR></BR>
-        <img src="/img/main.png" class="img">
+        <img src="./img/main.png" class="img">
         <p class="center">
             Recibir solicitud del lado del servidor.
         </p>
         <BR></BR>
-        <img src="/img/getpost.png" class="img">
+        <img src="./img/getpost.png" class="img">
         <p class="center">
             Consulta de datos a Mysql, procesamiento y conversión de datos a JSON.
         </p>
         <BR></BR>
-        <img src="/img/Mysql.png" class="img">
+        <img src="./img/Mysql.png" class="img">
         <p class="center">
             Datos almacenados en la base de datos.
         </p>
@@ -35,7 +35,7 @@
         Dentro de la app desarrollada, contiene un archivo de manifiesto (manifest.js), dicho archivo tiene la función de cargar la configuración inicial de la página, y algunos archivos de la misma como el icono de la aplicación, esta configuración permite instalar la aplicación web como aplicación del dispositivo, gracias a ello se puede  acceder a la aplicación sin necesidad de que previamente se haya tenido acceso a la misma desde el navegador, una vez echo esto, son considerados archivos locales en el dispositivo, ya que se encuentran almacenados internamente en el mismo.
     </p>
     <div class="center">
-        <img src="/img/manifest.png" class="img">
+        <img src="./img/manifest.png" class="img">
         <p class="center">
             Archivo de manifiesto.
         </p>
@@ -46,7 +46,7 @@
         Con la ayuda del service worker, durante el primer inicio de la aplicación los archivos que en un principio se encuentran en el servidor web se cargan en la cahe, para su uso posterior, en caso de que la app se vuelva a abrir el service worker interceptara los datos para verificar si están cargados en la cache, en caso de ser cierta la condición anterior, serán cargados desde ahí. Estos datos al estar cargados en la cache son considerados como datos offline, ya que se obtienen en la cache y no del servidor.
     </p>
     <div class="center">
-        <img src="/img/sw.png" class="img">
+        <img src="./img/sw.png" class="img">
         <p class="center">
             Service work configurado para almacenar los archivos en la cache.
         </p>
